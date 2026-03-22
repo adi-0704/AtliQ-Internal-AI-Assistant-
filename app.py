@@ -2,6 +2,7 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 from rag_engine import get_rag_chain_manual, check_pii, mask_pii
+from ingest_data import ingest_data
 
 load_dotenv()
 
@@ -37,6 +38,11 @@ def main_app():
     username = st.session_state.username
     
     st.title("AtliQ Internal AI Assistant 🚀")
+    # Ensure data is ingested on startup if DB is missing
+    if not os.path.exists("qdrant_db"):
+        with st.spinner("Initializing Vector Database... This may take a minute on first run."):
+            ingest_data()
+        st.success("Database initialized!")
     st.markdown(f"### Secure RAG with RBAC and Guardrails - Logged in as: **{username}**")
 
     # Sidebar for logout and info
