@@ -10,6 +10,7 @@ st.set_page_config(page_title="AtliQ Internal AI Assistant", layout="wide")
 
 # Mock user database
 USERS = {
+    "adi": {"password": "admin123", "role": "c-level"},
     "admin": {"password": "password123", "role": "c-level"},
     "finance_user": {"password": "finance_pass", "role": "finance"},
     "hr_user": {"password": "hr_pass", "role": "hr"},
