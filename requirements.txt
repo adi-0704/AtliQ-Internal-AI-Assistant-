@@ -11,3 +11,4 @@ langsmith
 pandas
 fastapi
 pydantic
+langchain-qdrant
