@@ -9,7 +9,6 @@ dist/
 env/
 venv/
 .streamlit/
-data/
 outputs/
 logs/
 *.log
