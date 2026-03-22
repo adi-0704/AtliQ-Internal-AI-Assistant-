@@ -1,0 +1,8 @@
+{
+    "adi": {"password": "admin123", "role": "c-level"},
+    "admin": {"password": "password123", "role": "c-level"},
+    "finance_user": {"password": "finance_pass", "role": "finance"},
+    "hr_user": {"password": "hr_pass", "role": "hr"},
+    "eng_user": {"password": "eng_pass", "role": "engineering"},
+    "marketing_user": {"password": "marketing_pass", "role": "marketing"}
+}
