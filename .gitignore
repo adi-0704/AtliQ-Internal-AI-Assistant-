@@ -1,0 +1,15 @@
+.env
+__pycache__/
+*.pyc
+qdrant_db/
+temp_repo/
+node_modules/
+dist/
+.venv/
+env/
+venv/
+.streamlit/
+data/
+outputs/
+logs/
+*.log
